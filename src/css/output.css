@@ -1419,6 +1419,18 @@ input:checked + .toggle-bg{
   height: 100vh;
 }
 
+.h-60{
+  height: 15rem;
+}
+
+.h-64{
+  height: 16rem;
+}
+
+.h-24{
+  height: 6rem;
+}
+
 .w-1\/2{
   width: 50%;
 }
@@ -1461,6 +1473,14 @@ input:checked + .toggle-bg{
 
 .w-full{
   width: 100%;
+}
+
+.w-24{
+  width: 6rem;
+}
+
+.w-screen{
+  width: 100vw;
 }
 
 .max-w-screen-xl{
@@ -2504,6 +2524,10 @@ input:checked + .toggle-bg{
   border-width: 0px;
 }
 
+.border-8{
+  border-width: 8px;
+}
+
 .border-x{
   border-left-width: 1px;
   border-right-width: 1px;
@@ -2536,6 +2560,10 @@ input:checked + .toggle-bg{
 
 .border-t{
   border-top-width: 1px;
+}
+
+.border-t-8{
+  border-top-width: 8px;
 }
 
 .border-solid{
@@ -2691,6 +2719,10 @@ input:checked + .toggle-bg{
 
 .bg-white\/50{
   background-color: rgb(255 255 255 / 0.5);
+}
+
+.bg-opacity-50{
+  --tw-bg-opacity: 0.5;
 }
 
 .bg-gradient-to-r{
@@ -3516,6 +3548,10 @@ input:checked + .toggle-bg{
 
 .ease-out{
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
+
+.ease-linear{
+  transition-timing-function: linear;
 }
 
 .content-\[\'this-is-also-valid\]-weirdly-enough\'\]{

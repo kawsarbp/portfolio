@@ -196,7 +196,7 @@
         <div class="grid grid-cols-1 md:grid-cols-3 gap-16">
             <div>
                 <div class="shadow-xl rounded-md">
-                    <div><img src="assets/img/code.jpg" alt="...." class="w-full h-56 rounded-tl rounded-tr"></div>
+                    <div><img src="assets/img/code.jpg" alt="...." class="w-full h-64 object-cover rounded-tl rounded-tr"></div>
                     <div class="p-4 space-y-2 bg-white rounded-md">
                         <div class="text-xl font-medium bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%">
                             BLOG SITE
@@ -215,7 +215,7 @@
             </div>
             <div>
                 <div class="shadow-xl rounded-md">
-                    <div><img src="assets/img/code.jpg" alt="...." class="w-full h-56 rounded-tl rounded-tr"></div>
+                    <div><img src="assets/img/code.jpg" alt="...." class="w-full h-64 object-cover rounded-tl rounded-tr"></div>
                     <div class="p-4 space-y-2 bg-white rounded-md">
                         <div class="text-xl font-medium bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%">
                             BLOG SITE
@@ -234,7 +234,7 @@
             </div>
             <div>
                 <div class="shadow-xl rounded-md">
-                    <div><img src="assets/img/code.jpg" alt="...." class="w-full h-56 rounded-tl rounded-tr"></div>
+                    <div><img src="assets/img/code.jpg" alt="...." class="w-full h-64 object-cover rounded-tl rounded-tr"></div>
                     <div class="p-4 space-y-2 bg-white rounded-md">
                         <div class="text-xl font-medium bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%">
                             BLOG SITE
@@ -302,13 +302,46 @@
     </div>
 </footer>
 
+<style>
+    .loader {
+        border-top-color: #3498db;
+        -webkit-animation: spin 1.5s linear infinite;
+        animation: spin 1.5s linear infinite;
+    }
+
+    @-webkit-keyframes spin {
+        0% { -webkit-transform: rotate(0deg); }
+        100% { -webkit-transform: rotate(360deg); }
+    }
+
+    @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+</style>
+
+<div id="loader" class="fixed top-0 left-0 w-screen h-screen flex items-center justify-center bg-gray-900 bg-opacity-50 z-50 hidden">
+    <div class="loader ease-linear rounded-full border-8 border-t-8 border-gray-200 h-24 w-24"></div>
+</div>
+
+<script>
+    window.addEventListener('load', function () {
+        // Hide the loader when the window is fully loaded
+        document.getElementById('loader').classList.add('hidden');
+    });
+
+    document.addEventListener('DOMContentLoaded', function () {
+        // Show the loader when the DOM content is loaded
+        document.getElementById('loader').classList.remove('hidden');
+    });
+</script>
 
 <script src="src/js/flowbite/flowbite.min.js"></script>
 <script src="src/js/typejs/typed.js@2.0.12"></script>
 
 <script>
     var options = {
-        strings: ['web developer', 'Photographer', 'Freelancer'],
+        strings: ['web developer...', 'Photographer...', 'Freelancer...'],
         typeSpeed: 40,
         backSpeed: 50,
         loop: true
