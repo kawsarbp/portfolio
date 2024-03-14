@@ -13,6 +13,9 @@ module.exports = {
                     "2xl": "4rem",
                 },
             },
+            colors:{
+                primary:"#E65F78"
+            }
         },
     },
     plugins: [

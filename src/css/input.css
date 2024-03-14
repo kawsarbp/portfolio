@@ -11,9 +11,9 @@
 }
 @layer utilities {
     .primary-color {
-        color: #E65F78;
+        @apply text-primary
     }
     .primary-bg {
-        background-color: #E65F78;
+        @apply bg-primary
     }
 }
